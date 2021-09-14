@@ -14,10 +14,12 @@ function App() {
  
   const { company, dates, duties, title } = data[value];
   return (
+
+
+
     <section className="section">
       <div className="title">
         <h2>experience</h2>
-        <div className="underline"></div>
       </div>
       <div className="jobs-center">
         {/* btn container */}
@@ -46,12 +48,9 @@ function App() {
                 <p>{duty}</p>
               </div>
             )
-          })}
+          })};
         </article>
       </div>
-      <button type="button" className="btn">
-        more info
-      </button>
     </section>
   )
 }
